@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Details Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Shop Details</h1>
+        <form id="shopForm">
+            <label for="mobile">Mobile Number:</label>
+            <div class="check-button-container">
+                <input type="text" id="mobile" name="mobile" placeholder="Enter Mobile Number" required>
+                <button type="button" id="checkMobile">Check</button>
+            </div>
+            <span id="mobileError" class="error"></span>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="type">Type:</label>
+            <select id="type" name="type" required>
+                <option value="wholeseller">Wholeseller</option>
+                <option value="retailer">Retailer</option>
+            </select>
+
+            <label for="mobile">Mobile Number:</label>
+           
+            <span id="mobileError" class="error"></span>
+
+            <label for="email">Email ID:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state" required>
+
+            <label for="pincode">Pincode:</label>
+            <input type="text" id="pincode" name="pincode" required>
+
+            <label for="area">Area:</label>
+            <input type="text" id="area" name="area" required>
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <!-- Popup Modal -->
+    <div id="popupModal" class="popup">
+        <div class="popup-content">
+            <h2>Shop Details</h2>
+            <p><strong>Name:</strong> <span id="popupName"></span></p>
+            <p><strong>State:</strong> <span id="popupState"></span></p>
+            <p><strong>Pincode:</strong> <span id="popupPincode"></span></p>
+            <p><strong>Area:</strong> <span id="popupArea"></span></p>
+            <p><strong>Type:</strong> <span id="popupType"></span></p>
+            <p><strong>City:</strong> <span id="popupCity"></span></p>
+            <p><strong>Address:</strong> <span id="popupAddress"></span></p>
+            <p><strong>Email ID:</strong> <span id="popupEmail"></span></p>
+            <button id="editBtn">Edit</button>
+            <button id="updateBtn">Update</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
